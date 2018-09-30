@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--
+This is a HTML file that contains a form with two input fields and one button.
+Users will see this form upon entering this web site.  This file will send a HTTP request to the success URL.
+Created on : 22-Aug-2018
+Author     : Abdus Sattar Mia
+-->
+<html lang="en">
+  <title> Data Collector App</title>
+  <head>
+    <link rel="stylesheet"  href="../static/main.css">
+  </head>
+    <body>
+      <div class="container">
+        <h2>Please fill the entires to sign up</h2>
+        <div class="message">
+         {{comment | safe}}
+        </div>
+        <form action="{{url_for('success')}}" method="POST">
+	     	  Name: <input title="Your information will be safe with us" placeholder="Enter your name" type="text"  name="name" required> <br>
+          Email: <input title="Your email will be safe with us" placeholder="myemail@domain.com" type="email" name="email_name" required> <br>
+          <button type="submit" > Submit </button>
+        </form>
+      </div>
+    </body>
+</html>
