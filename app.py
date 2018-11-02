@@ -1,5 +1,5 @@
 """
-This is a maun python script for collecting data from the user. This progam renders
+This is a main python script for collecting data from the user. This progam renders
 index.html and success.html files.
 Author: Abdus Sattar Mia
 """
